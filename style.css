@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+    background: #d37629;
+    margin: 0;
+    padding: 0;
+}
+
+#game-area{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #e0ffe0;
+    overflow: hidden;
+    background: url('anthome.png') no-repeat center;
+    margin: 20px auto;
+}
+
+.ant{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('ant.png') no-repeat center/contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.ant.smashed{
+    background: url('crushed-ant.png') no-repeat center/contain;
+}
+
+#scoreboard{
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     font-size: 20px;
+     margin: 10px 0;
+}
+
+#restart{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
